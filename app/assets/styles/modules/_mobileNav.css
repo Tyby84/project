@@ -1,0 +1,112 @@
+.nav__mobile {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+	display: flex;
+	background-color: rgba(0,0,0,.8);
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 180px;
+	transition: all .5s ease-out;
+	@mixin small{
+		width: 80%;
+		height: 200px;
+		margin: 0 auto;
+	}
+	&__ul {
+		margin: 0 auto;
+		padding-bottom: 1rem;
+		
+	}
+	&__li {
+		@mixin fixLi;
+		margin: .5rem 0 0 0;
+		transition: all .5s ease-out;
+		&:hover {
+			color: #909090;
+		}
+	}
+	
+	
+	&--shown {
+		opacity: 1;
+	}
+	
+}
+
+.menu-bar {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 20;
+		cursor: pointer;
+		transition: transform .3s ease-out;
+		 
+	&:hover {
+		transform: scale(.9);
+	}
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top:8px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .3s ease-out;
+			
+		}
+		&--bar{
+			
+			position: absolute;
+			top:0px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .3s ease-out;
+	}
+			
+			&::after {
+			content: "";
+			position: absolute;
+			top:16px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+				transition: all .3s ease-out;
+			}
+			
+		
+	&--close {
+		&::before {
+			
+				transform: rotate(-45deg);
+				top: 5px;
+				background-color: #fff;
+			}
+		.menu-bar--bar {
+			
+			transform: rotate(45deg);
+			top: 5px;
+			background-color: #fff;
+		}
+		&::after {
+				opacity: 0;
+			}
+		
+			
+			
+		
+		
+	}
+	
+	}

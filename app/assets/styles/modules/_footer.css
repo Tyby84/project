@@ -1,0 +1,61 @@
+.footer {
+	position: relative;
+	background-color: #525252;
+	padding: 1rem 0;
+	
+	&__icon {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		
+		&:last-child {margin-bottom: 0;}
+		
+		a {
+			color: #fff;
+			transition: all .5s ease-out;
+			
+			&:hover {
+			color: #222;
+				
+		}
+		}
+	}
+	
+	&__timing {
+		position: absolute;
+		top: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #fff;
+		font-size: 1.2rem;
+		text-align: center;
+		
+		&__date{
+			padding-bottom: .5rem;
+			
+		}
+		&__time {
+			padding: .4rem;
+			margin: .2rem auto .2rem auto;
+			border: 1px solid #fff;		
+		}
+	}
+	&__copy {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #d1d1d1;
+		font-size: .9rem;
+		text-align: center;
+	}
+	
+	
+}
+.separator {
+				
+				visibility: hidden;
+				transition: opacity .5s ease-out;
+				&--on {
+					visibility: visible;
+				}
+			}

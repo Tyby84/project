@@ -1,0 +1,15 @@
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	@mixin small {
+		max-width: 700px;
+	}
+	@mixin medium {
+		max-width: 1000px;
+	}
+	@mixin large {
+		max-width: 1300px;
+	}
+}

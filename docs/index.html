@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="This website is about to show my web development skills: HTML5, CSS3 - Using PostCSS and following the BEM methodology, Javascript - OOP and modular pattern with Jquery and ES6, NPM, Gulp, Webpack." />
+	<meta name="keywords" content="web development, portfolio" />
+	<title>Tibor Fenyvesi</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Arimo|Titillium+Web:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+	
+	<link rel="stylesheet" href="assets/styles/styles-134ff21edd.css"/>
+	
+	<script src="assets/scripts/Vendor-bdc4633ab6.js"></script>
+	
+</head>
+<body>
+
+	<nav class="nav">
+		<ul class="nav__ul">
+			<a id="about-link" href="#about"><li class="nav__li">About</li></a>
+			<a id="skills-link" href="#skills"><li class="nav__li">Skills</li></a>
+			<a id="contact-link" href="#contact"><li class="nav__li">Contact</li></a>
+		</ul>
+	</nav>
+	<div class="menu-bar">
+				<div class="menu-bar--bar"></div>
+			</div>
+		<nav class="nav__mobile">
+			
+			<ul class="nav__mobile__ul">
+				<a id="about-link" href="#about"><li class="nav__mobile__li">About</li></a>
+				<a id="skills-link" href="#skills"><li class="nav__mobile__li">Skills</li></a>
+				<a id="contact-link" href="#contact"><li class="nav__mobile__li">Contact</li></a>
+			</ul>
+		</nav>
+	
+		
+	<div class="welcome">
+		<picture>
+			<source srcset="assets/images/tech-large.jpg 1920w" media="(min-width: 1280px)">
+			<source srcset="assets/images/tech-mid.jpg 1280w" media="(min-width: 640px)">
+			<img srcset="assets/images/tech-mob.jpg 640w" alt="Welcome Picture">
+		</picture>
+		<div class="welcome--text">
+			
+				<h1 class="welcome__title">Web Development <br>by Tibor Fenyvesi</h1>
+			<div class="welcome--anim"></div>
+			<h5 class="welcome__ready">Ready <span class="separator">_</span></h5>
+			<a id="about-link" class="btn btn--start" href="#about">Start</a>
+
+		</div>
+	</div><!--welcome-->
+	
+	<div class="about">
+		<div class="container">
+			<h1 class="section-title" id="about" data-matching-link="#about-link">About Me</h1>
+			<div class="row--flex">
+				
+			<div class="about__pic" >
+				<img class="lazyload" src="assets/images/portre-600-640.jpg" alt="Picture about me">
+			</div>
+			<div class="about__desc"><p>I have allways been interested how websites are built and how do they work. I made my first website in 2016. I used HTML, CSS and JQuery plugins, however I was keen to learn more technologies to build better and more efficient Webpages.</p>
+			<p> I decided to keep learning and improving my skills and my knowledge. I attanded on online courses, learnt Javascript and Web Development tools on different projects, made several types of websites.</p>
+			<p>Nowadays, I am using the latest web technologies and methodologies. I have the motivation and enthusiasm to keep improve myself and my webpages. I am looking positively into the future and ready for the new technologies and challanges! <br>
+			<span>Tibor Fenyvesi</span></p>
+			</div>
+			</div>
+		</div>
+	</div><!--about-->
+	
+	<div class="skills">
+		<div class="container">
+			<h1 class="section-title section-title__light" id="skills" data-matching-link="#skills-link">My Skills</h1>
+			<div class="row--flex row--flex--wrap">
+			<div id="toSkills"></div>
+			</div>
+		</div>
+	</div><!--skills-->
+	
+	<div class="contact">
+	
+		<h1 class="section-title" id="contact" data-matching-link="#contact-link">Contact</h1>
+		<div class="container">
+			<div class="row--flex">
+				<h3 class="contact__head">If you have any questions or would like to leave a feedback please find a way below by clicking the button. You can reach me by email, Facebook, LinkedIn and also find the source code on GitHub for this site and for other projects as well! See you soon!
+				</h3>
+			</div>
+			<div class="row--flex">
+				<a class="btn btn--contact open-modal" href="#">Keep in touch</a>
+			</div>
+			
+			
+			
+		</div>
+		<div class="logos">
+				<div class="logos__cont">
+					<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><img class="logos__img" src="assets/images/icons/facebook-good.png" alt="FB"></a>
+					<a href="https://github.com/Tyby84" target="_blank"><img class="logos__img" src="assets/images/icons/github-394322_640.png" alt="github"></a>
+					<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><img class="logos__img" src="assets/images/icons/linked-in-2668692_640.png" alt="ln"></a>
+				</div>
+			</div>	
+		
+	</div>
+	
+	<div class="modal">
+	<p class="modal__close">X</p>
+		<div class="modal__head"><h1>Keep in touch!</h1>
+			
+		</div>
+		
+		<div class="modal__body">
+			<div class="row--flex">
+				<p class="modal__content"><i class="far fa-envelope-open"></i>tibofenyvesi84@gmail.com</p>
+				
+			</div>
+			
+		</div>
+		<div class="modal__footer">
+				<h3 class="modal__footer__head">Social Media</h3>
+				
+			<div class="row--flex row--flex--wrap">
+				<div class="modal__footer-fb">
+					<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><i class="fab fa-facebook"></i></a>
+				</div>
+				<div class="modal__footer-li">
+					<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</div>
+				<div class="modal__footer-git">
+					<a href="https://github.com/Tyby84" target="_blank"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="row--flex row--flex--wrap--col">
+					<div class="footer__icon">
+						<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><i class="fab fa-facebook"></i></a>
+					</div>
+					<div class="footer__icon">
+						<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</div>
+					<div class="footer__icon">
+						<a href="https://github.com/Tyby84" target="_blank"><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+				<div class="footer__timing">
+					<div class="footer__timing__date">
+					<span class="dispDayNum"></span>
+					<span class="dispMonth"></span>,
+						<span class="dispDate"></span>
+						
+						<br>
+						<span class="dispDay"></span>
+						
+					</div>
+					<div class="footer__timing__time">
+						<span class="dispHour"></span>
+						<span class="separator">:</span>
+						<span class="dispMin"></span>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<p class="footer__copy__desc">This website is made and developed by Tibor Fenyvesi</p>
+				</div>
+				<div class="nav__footer">
+					
+			<ul class="nav__footer__ul">
+				<a id="about-link" href="#about"><li class="nav__footer__li">About</li></a>
+				<a id="skills-link" href="#skills"><li class="nav__footer__li">Skills</li></a>
+				<a id="contact-link" href="#contact"><li class="nav__footer__li">Contact</li></a>
+			</ul>
+						
+				</div>
+		</div>
+	</footer>
+		<script src="assets/scripts/App-1948f0b03c.js"></script>
+		
+</body>
+</html>

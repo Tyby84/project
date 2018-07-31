@@ -1,0 +1,66 @@
+.nav {
+	display: none;
+	@mixin large {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(#000, 0);
+	display: flex;
+	justify-content: flex-end;
+		transform: scale(0);
+		transition: all .5s ease-out;
+		&--scrolling {
+			background-color: rgba($main, .85);
+			transform: scale(1);
+		}
+		
+		&__ul {
+		display: flex;
+		margin-right: 2rem;
+			
+	}
+	&__li {
+		@mixin fixLi;
+		margin: 0 1rem;
+		transition: background .5s ease-out;
+		&--scrolling {
+			padding: .1rem;
+			font-size: .9rem;
+		}
+		
+				
+		&:hover {
+			color: $main;
+			background-color: #fff;
+
+		}
+		
+		&--active{
+			color: #287b8e;
+			background-color: #fff;
+			padding: 3px;
+		}
+		
+		}
+	}
+	&__footer {
+		position: absolute;
+		top: 0;
+		right: 1rem;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0;
+		&__li {
+			@mixin fixLi;
+			font-size: 1rem;
+			margin-bottom: .5rem;
+			box-shadow: 2px 2px 2px #222;
+			&:hover {
+				box-shadow: 1px 1px 2px #222;
+
+					}
+				}
+		}
+	
+	
+}

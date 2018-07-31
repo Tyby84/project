@@ -1,0 +1,40 @@
+@define-mixin small {
+	@media (min-width:500px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin medium {
+	@media (min-width: 800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin large {
+	@media (min-width: 1200px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin desc {
+		font-weight: 300;
+		color: #6d6d6d;
+		text-align: left;	
+		margin: 0 auto;
+		line-height: 1.5;
+		font-size: 1.2rem;
+}
+@define-mixin trans {
+	transition: all .5s ease-out;
+}
+@define-mixin transSlow {
+	transition: all 1s ease-out;
+}
+@define-mixin fixLi {
+		list-style-type: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 1.1rem;
+		color: #fff;
+		padding: .3rem;
+}

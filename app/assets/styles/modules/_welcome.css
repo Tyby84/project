@@ -1,0 +1,88 @@
+.welcome {
+	position: relative;
+	height: 100vh;
+	background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-mob.jpg);
+	background-size: cover;
+	@mixin medium {
+		background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-mid.jpg);
+	background-size: cover;
+		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+	}
+	@mixin large {
+		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+		background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-large.jpg);
+	background-size: cover;
+	}
+	
+	
+	&--text {
+
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+				backface-visibility: hidden;
+
+	}
+	
+	
+	
+	&__title {
+		color: #eee;
+		&__main {
+			display: block;
+			animation: titleRight 2.5s ease-out 1s;
+			animation-fill-mode: backwards;
+			font-size: 2.5rem;
+			font-weight: 700;
+			letter-spacing: 3px;
+			padding-bottom: 1rem;
+		}
+		&__sub {
+			display: block;
+			animation: titleLeft 2.5s ease-out 1s;
+			animation-fill-mode: backwards;
+			font-weight: 300;
+			padding-bottom: 2rem;
+		}
+		
+		
+		
+	}
+	
+	
+		
+	
+	
+}
+
+
+@keyframes titleRight {
+	0%{
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	80%{
+		transform: translateX(20px);
+		
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);		
+	}
+}
+@keyframes titleLeft {
+	0%{
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	80%{
+		transform: translateX(-20px);
+		
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);		
+	}
+}

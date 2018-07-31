@@ -1,0 +1,30 @@
+.row {
+	width: 100%;
+	
+	
+	&--flex {
+		display: flex;
+		
+		flex-direction: column;
+		
+		@mixin large {
+			flex-direction: row;
+			
+		}
+		&--wrap{
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+			@mixin small {
+			justify-content: space-around;
+			flex-direction: row;
+		}
+			&--col {
+				flex-direction: column;
+				
+			}
+		}
+		
+		
+	}
+}

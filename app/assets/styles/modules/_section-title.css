@@ -1,0 +1,17 @@
+.section-title {
+	border-top: 3px solid $main;
+	border-bottom: 3px solid $main;
+	max-width: 150px;
+	margin: 2rem auto;
+	font-weight: 300;
+	color: $main;
+	text-align: center;
+	padding: .3rem 0;
+	
+	&__light {
+		color: #fff;
+		border-top: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+	}
+	
+}
