@@ -3,8 +3,12 @@
 	padding-bottom: 2rem;
 	background-color: rgba(60, 60, 60, 0.89);
 	color: #fff;
-	clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 64%, 100% 92%, 0 100%, 0% 80%, 0% 20%);
+	
+	@mixin large {
+		clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
 
+
+	}
 	
 	&__item {
 		transition: all .5s ease-out;

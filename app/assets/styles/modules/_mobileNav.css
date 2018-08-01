@@ -48,6 +48,8 @@
 	
 }
 
+
+
 .menu-bar {
 		width: 20px;
 		height: 20px;
@@ -57,6 +59,8 @@
 		z-index: 20;
 		cursor: pointer;
 		transition: transform .3s ease-out;
+		animation: barUp 2s ease-out 1s;
+		animation-fill-mode: backwards;
 		 
 	&:hover {
 		transform: scale(.9);
@@ -113,10 +117,40 @@
 				opacity: 0;
 			}
 		
-			
-			
-		
-		
 	}
 	
 	}
+
+@keyframes barUp {
+	0% {
+		opacity: 0;
+		transform: rotate(720deg) scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

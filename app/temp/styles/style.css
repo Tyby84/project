@@ -716,6 +716,11 @@ a {
 	color: #222;
 }
 
+.btn-dark {
+	background-color: #222;
+	color: #fff;
+}
+
 .btn::after {
 	content: '';
 	display: inline-block;
@@ -734,6 +739,10 @@ a {
 	background-color: #fff;
 }
 
+.btn-dark::after {
+	background-color: #222;
+}
+
 .btn:hover::after {
 	-webkit-transform: scaleX(1.2) scaleY(1.4);
 	        transform: scaleX(1.2) scaleY(1.4);
@@ -741,8 +750,8 @@ a {
 }
 
 .btn-animated {
-	-webkit-animation: btnMove 2s ease-out 2s;
-	        animation: btnMove 2s ease-out 2s;
+	-webkit-animation: btnMove 2s ease-out 3.5s;
+	        animation: btnMove 2s ease-out 3.5s;
 	-webkit-animation-fill-mode: backwards;
 	        animation-fill-mode: backwards;
 }
@@ -852,6 +861,7 @@ a {
 
 .row {
 	width: 100%;
+	
 }
 
 .row--flex {
@@ -913,6 +923,12 @@ a {
 				
 			}
 
+.row--center {
+		width: 15rem;
+		margin: 0 auto;
+		text-align: center;
+	}
+
 .container {
 	max-width: 400px;
 	margin: 0 auto;
@@ -964,9 +980,15 @@ a {
 	padding-bottom: 2rem;
 	background-color: rgba(60, 60, 60, 0.89);
 	color: #fff;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 64%, 100% 92%, 0 100%, 0% 80%, 0% 20%);
-	        clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 64%, 100% 92%, 0 100%, 0% 80%, 0% 20%);
 }
+
+@media (min-width: 1200px) {
+
+.skills {
+		-webkit-clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
+		        clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0)
+}
+	}
 
 .skills__item {
 		-webkit-transition: all .5s ease-out;
@@ -1089,11 +1111,11 @@ a {
 	}
 
 .modal__head {
-		max-width: 200px;
+		max-width: 20rem;
 		margin: 2.5rem auto;
 		color: #eee;
 		position: relative;
-		
+		text-align: center;
 	}
 
 .modal__close {
@@ -1256,9 +1278,9 @@ a {
 		}
 		
 		.nav__li--active{
-			color: #287b8e;
-			background-color: #fff;
+			color: #fff;
 			padding: 3px;
+			border-bottom: 1px solid #fff;
 		}
 	}
 
@@ -1453,6 +1475,10 @@ a {
 		transition: -webkit-transform .3s ease-out;
 		transition: transform .3s ease-out;
 		transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+		-webkit-animation: barUp 2s ease-out 1s;
+		        animation: barUp 2s ease-out 1s;
+		-webkit-animation-fill-mode: backwards;
+		        animation-fill-mode: backwards;
 	
 	}
 
@@ -1519,6 +1545,36 @@ a {
 .menu-bar--close::after {
 				opacity: 0;
 			}
+
+@-webkit-keyframes barUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(720deg) scale(0);
+		        transform: rotate(720deg) scale(0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(0) scale(1);
+		        transform: rotate(0) scale(1);
+	}
+	
+	
+}
+
+@keyframes barUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(720deg) scale(0);
+		        transform: rotate(720deg) scale(0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(0) scale(1);
+		        transform: rotate(0) scale(1);
+	}
+	
+	
+}
 
 .logos{
 	margin-top: 1rem;

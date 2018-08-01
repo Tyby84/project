@@ -20,11 +20,11 @@
 	}
 	
 	&__head {
-		max-width: 200px;
+		max-width: 20rem;
 		margin: 2.5rem auto;
 		color: #eee;
 		position: relative;
-		
+		text-align: center;
 	}
 	
 	&__close {

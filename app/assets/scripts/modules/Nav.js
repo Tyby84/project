@@ -7,7 +7,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 class Nav {
 	constructor() {
 		this.navbar = $('.nav');
-		this.links = $('.nav a, .nav__footer__ul a, .btn--start');
+		this.links = $('.nav a, .nav__mobile a, .nav__footer__ul a, .btn-animated');
 		this.liTags = $('.nav__li, .nav__footer__li');
 		this.secTitle = $('.about');
 		this.skillsTitle = $('.skills');

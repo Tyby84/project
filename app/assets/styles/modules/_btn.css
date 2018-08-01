@@ -76,6 +76,10 @@
 	background-color: #fff;
 	color: #222;
 }
+.btn-dark {
+	background-color: #222;
+	color: #fff;
+}
 
 .btn::after {
 	content: '';
@@ -93,13 +97,16 @@
 .btn-white::after {
 	background-color: #fff;
 }
+.btn-dark::after {
+	background-color: #222;
+}
 .btn:hover::after {
 	transform: scaleX(1.2) scaleY(1.4);
 	opacity: 0;
 }
 
 .btn-animated {
-	animation: btnMove 2s ease-out 2s;
+	animation: btnMove 2s ease-out 3.5s;
 	animation-fill-mode: backwards;
 }
 
