@@ -13,46 +13,36 @@
 		background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-large.jpg);
 	background-size: cover;
 	}
-	
-	
-	&--text {
-
-		position: absolute;
-		top: 35%;
-		left: 50%;
-		transform: translate(-50%,-50%);
+	display: flex;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
-				backface-visibility: hidden;
-
+	&--text {
+		margin-bottom: 3rem;
 	}
 	
-	
-	
 	&__title {
+		position: relative;
 		color: #eee;
 		&__main {
 			display: block;
-			animation: titleRight 2.5s ease-out 1s;
+			animation: titleRight 2s ease-out 1s;
 			animation-fill-mode: backwards;
 			font-size: 2.5rem;
 			font-weight: 700;
 			letter-spacing: 3px;
-			padding-bottom: 1rem;
 		}
 		&__sub {
 			display: block;
-			animation: titleLeft 2.5s ease-out 1s;
+			animation: titleLeft 2s ease-out 1s;
 			animation-fill-mode: backwards;
 			font-weight: 300;
-			padding-bottom: 2rem;
 		}
-		
-		
-		
 	}
-	
-	
-		
+	&__desc {
+		color: #fff;
+		font-size: 1.5rem;
+	}
 	
 	
 }
@@ -61,28 +51,28 @@
 @keyframes titleRight {
 	0%{
 		opacity: 0;
-		transform: translateX(-200px);
+		margin-left: 20rem;
 	}
-	80%{
-		transform: translateX(20px);
-		
+	70%{
+		margin-left: -5rem;
 	}
+	
 	100%{
 		opacity: 1;
-		transform: translateX(0px);		
+		margin-left: 0;
 	}
 }
 @keyframes titleLeft {
 	0%{
 		opacity: 0;
-		transform: translateX(200px);
+		margin-right: 20rem;
 	}
-	80%{
-		transform: translateX(-20px);
-		
+	70%{
+		margin-right: -5rem;
 	}
+	
 	100%{
 		opacity: 1;
-		transform: translateX(0px);		
+		margin-right: 0;
 	}
 }

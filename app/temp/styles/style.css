@@ -480,9 +480,16 @@ a {
 	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(5, 92, 118, 0.6)),to(rgba(6, 33, 105, 0.5))), url(../../assets/images/tech-mob.jpg);
 	background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-mob.jpg);
 	background-size: cover;
-	
-	
-		
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		text-align: center;
 	
 	
 }
@@ -495,9 +502,6 @@ a {
 	background-size: cover;
 		-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 		        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%)
-	
-	
-		
 	
 	
 }
@@ -513,123 +517,100 @@ a {
 	background-size: cover
 	
 	
-		
-	
-	
 }
 	}
 
 .welcome--text {
-
-		position: absolute;
-		top: 35%;
-		left: 50%;
-		-webkit-transform: translate(-50%,-50%);
-		        transform: translate(-50%,-50%);
-		text-align: center;
-				-webkit-backface-visibility: hidden;
-				        backface-visibility: hidden;
-
+		margin-bottom: 3rem;
 	}
 
 .welcome__title {
+		position: relative;
 		color: #eee;
-		
-		
-		
 	}
 
 .welcome__title__main {
 			display: block;
-			-webkit-animation: titleRight 2.5s ease-out 1s;
-			        animation: titleRight 2.5s ease-out 1s;
+			-webkit-animation: titleRight 2s ease-out 1s;
+			        animation: titleRight 2s ease-out 1s;
 			-webkit-animation-fill-mode: backwards;
 			        animation-fill-mode: backwards;
 			font-size: 2.5rem;
 			font-weight: 700;
 			letter-spacing: 3px;
-			padding-bottom: 1rem;
 		}
 
 .welcome__title__sub {
 			display: block;
-			-webkit-animation: titleLeft 2.5s ease-out 1s;
-			        animation: titleLeft 2.5s ease-out 1s;
+			-webkit-animation: titleLeft 2s ease-out 1s;
+			        animation: titleLeft 2s ease-out 1s;
 			-webkit-animation-fill-mode: backwards;
 			        animation-fill-mode: backwards;
 			font-weight: 300;
-			padding-bottom: 2rem;
 		}
+
+.welcome__desc {
+		color: #fff;
+		font-size: 1.5rem;
+	}
 
 @-webkit-keyframes titleRight {
 	0%{
 		opacity: 0;
-		-webkit-transform: translateX(-200px);
-		        transform: translateX(-200px);
+		margin-left: 20rem;
 	}
-	80%{
-		-webkit-transform: translateX(20px);
-		        transform: translateX(20px);
-		
+	70%{
+		margin-left: -5rem;
 	}
+	
 	100%{
 		opacity: 1;
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);		
+		margin-left: 0;
 	}
 }
 
 @keyframes titleRight {
 	0%{
 		opacity: 0;
-		-webkit-transform: translateX(-200px);
-		        transform: translateX(-200px);
+		margin-left: 20rem;
 	}
-	80%{
-		-webkit-transform: translateX(20px);
-		        transform: translateX(20px);
-		
+	70%{
+		margin-left: -5rem;
 	}
+	
 	100%{
 		opacity: 1;
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);		
+		margin-left: 0;
 	}
 }
 
 @-webkit-keyframes titleLeft {
 	0%{
 		opacity: 0;
-		-webkit-transform: translateX(200px);
-		        transform: translateX(200px);
+		margin-right: 20rem;
 	}
-	80%{
-		-webkit-transform: translateX(-20px);
-		        transform: translateX(-20px);
-		
+	70%{
+		margin-right: -5rem;
 	}
+	
 	100%{
 		opacity: 1;
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);		
+		margin-right: 0;
 	}
 }
 
 @keyframes titleLeft {
 	0%{
 		opacity: 0;
-		-webkit-transform: translateX(200px);
-		        transform: translateX(200px);
+		margin-right: 20rem;
 	}
-	80%{
-		-webkit-transform: translateX(-20px);
-		        transform: translateX(-20px);
-		
+	70%{
+		margin-right: -5rem;
 	}
+	
 	100%{
 		opacity: 1;
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);		
+		margin-right: 0;
 	}
 }
 
