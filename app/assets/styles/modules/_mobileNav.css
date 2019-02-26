@@ -21,10 +21,11 @@
 	}
 	@mixin large{
 		top: 3rem;
-		left: 80%;
-		width: 30rem;
+		left: 85%;
+		width: 20rem;
 		height: 15rem;
-		
+		border-top-left-radius: 1.5rem;
+		border-bottom-right-radius: 1.5rem;
 	}
 	&__ul {
 		margin: 0 auto;
@@ -35,9 +36,12 @@
 		@mixin fixLi;
 		margin: .5rem 0 0 0;
 		text-align: center;
+		border-top-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
 		transition: all .5s ease-out;
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.5);
+			
 		}
 	}
 	

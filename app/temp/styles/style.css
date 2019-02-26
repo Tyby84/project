@@ -550,8 +550,14 @@ a {
 		}
 
 .welcome__desc {
+		display: block;
 		color: #fff;
-		font-size: 1.5rem;
+		font-size: 1.8rem;
+		letter-spacing: 1.1;
+		-webkit-animation: titleUp 1s ease-out 3s;
+		        animation: titleUp 1s ease-out 3s;
+		-webkit-animation-fill-mode: backwards;
+		        animation-fill-mode: backwards;
 	}
 
 @-webkit-keyframes titleRight {
@@ -611,6 +617,42 @@ a {
 	100%{
 		opacity: 1;
 		margin-right: 0;
+	}
+}
+
+@-webkit-keyframes titleUp {
+	0%{
+		opacity: 0;
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+	}
+	50%{
+		-webkit-transform: scaleY(1.5);
+		        transform: scaleY(1.5);
+	}
+	
+	100%{
+		opacity: 1;
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
+	}
+}
+
+@keyframes titleUp {
+	0%{
+		opacity: 0;
+		-webkit-transform: scaleY(0);
+		        transform: scaleY(0);
+	}
+	50%{
+		-webkit-transform: scaleY(1.5);
+		        transform: scaleY(1.5);
+	}
+	
+	100%{
+		opacity: 1;
+		-webkit-transform: scaleY(1);
+		        transform: scaleY(1);
 	}
 }
 
@@ -1410,9 +1452,11 @@ a {
 
 .nav__mobile {
 		top: 3rem;
-		left: 80%;
-		width: 30rem;
-		height: 15rem
+		left: 85%;
+		width: 20rem;
+		height: 15rem;
+		border-top-left-radius: 1.5rem;
+		border-bottom-right-radius: 1.5rem
 	
 }
 	}
@@ -1432,12 +1476,15 @@ a {
 		padding: .3rem;
 		margin: .5rem 0 0 0;
 		text-align: center;
+		border-top-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
 		-webkit-transition: all .5s ease-out;
 		transition: all .5s ease-out;
 	}
 
 .nav__mobile__li:hover {
 			background-color: rgba(0, 0, 0, 0.5);
+			
 		}
 
 .nav__mobile--shown {
