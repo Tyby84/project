@@ -47,8 +47,24 @@
 		animation: titleUp 1s ease-out 3s;
 		animation-fill-mode: backwards;
 	}
+	&__separator{
+		height: 2px;
+		width: 0;
+		background-color: #eee;
+		animation: separator 1s ease-out 4s;
+		animation-fill-mode: backwards;
+	}
 	
 	
+}
+@keyframes separator{
+	0%{
+		transform: scaleY(0);
+	}
+	100%{
+		width: 1px;
+		transform: scaleX(5);
+	}
 }
 
 
