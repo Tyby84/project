@@ -1,39 +1,26 @@
 .about {
-		padding-bottom: 1rem;
-	&__pic {
-		max-width: 400px;
-		height: 100%;
-		margin: 0 auto 0.5rem auto;
-		box-shadow: -1px -1px 3px #222,
-		 			1px 1px 3px #222;
-		opacity: 0;
-		transition: all 1s ease-out;
-		transform: translate(-600px);
-		
-		&--visible {
-			transform: translate(0px);
-			opacity: 1;
-		}
-	}
+		padding-bottom: 2rem;
+	
 	&--item--container{
 		display: flex;
 		justify-content: space-between;
 	}
 	&__item{
-		max-width: 16rem;
-		border: 1px solid $text;
+		max-width: 17rem;
+		
 		padding: 0 1rem .5rem 1rem;
 		
 		&__title{
 			text-align: center;
+			color: $main;
 			font-weight: 600;
-			border-bottom: 1px solid $text;
+			/*border-bottom: 1px solid $text;*/
 		}
 		&__desc{
 		font-weight: 300;
 		color: $text;
 		text-align: center;	
-		margin: 0 auto;
+/*		margin: 0 auto;*/
 		line-height: 1.2;
 		font-size: 1.2rem;
 		}

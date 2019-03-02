@@ -33,8 +33,7 @@ const Skill = (props) => {
 	<div className="skills__item">
 		<img className="lazyload" src={props.icon} alt={props.title} />
 				<h3 className="skills__head">{props.title}</h3>
-				<p className="skills__desc">{props.desc}
-				</p>
+				
 	</div>
 		
 	);

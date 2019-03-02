@@ -834,30 +834,9 @@ a {
 }
 
 .about {
-		padding-bottom: 1rem;
+		padding-bottom: 2rem;
 	
 }
-
-.about__pic {
-		max-width: 400px;
-		height: 100%;
-		margin: 0 auto 0.5rem auto;
-		-webkit-box-shadow: -1px -1px 3px #222,
-		 			1px 1px 3px #222;
-		        box-shadow: -1px -1px 3px #222,
-		 			1px 1px 3px #222;
-		opacity: 0;
-		-webkit-transition: all 1s ease-out;
-		transition: all 1s ease-out;
-		-webkit-transform: translate(-600px);
-		        transform: translate(-600px);
-	}
-
-.about__pic--visible {
-			-webkit-transform: translate(0px);
-			        transform: translate(0px);
-			opacity: 1;
-		}
 
 .about--item--container{
 		display: -webkit-box;
@@ -869,22 +848,23 @@ a {
 	}
 
 .about__item{
-		max-width: 16rem;
-		border: 1px solid #6d6d6d;
+		max-width: 17rem;
+		
 		padding: 0 1rem .5rem 1rem;
 	}
 
 .about__item__title{
 			text-align: center;
+			color: #287b8e;
 			font-weight: 600;
-			border-bottom: 1px solid #6d6d6d;
+			/*border-bottom: 1px solid $text;*/
 		}
 
 .about__item__desc{
 		font-weight: 300;
 		color: #6d6d6d;
 		text-align: center;	
-		margin: 0 auto;
+/*		margin: 0 auto;*/
 		line-height: 1.2;
 		font-size: 1.2rem;
 		}
@@ -1005,11 +985,34 @@ a {
 		border-bottom: 3px solid #fff;
 	}
 
+.toSkills{
+	background-color: #fff;
+}
+
 .skills {
 	padding-top: 1rem;
 	padding-bottom: 2rem;
 	background-color: #5f5f5f;
 	color: #fff;
+	
+	
+	/*&__desc {
+		@mixin desc;
+		text-align: center;
+		font-size: 1.1rem;
+		color: #eee;
+		a {
+			color: $main;
+		}
+		
+		@mixin small {
+			max-width: 400px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+		@mixin medium {text-align: left;}
+	}*/
 }
 
 @media (min-width: 1200px) {
@@ -1030,17 +1033,17 @@ a {
 		        box-shadow: 1px 1px 5px #eee;
 		background: rgba(40,123,142, .2);
 		margin-bottom: 1rem;
-		height: 20rem;
-		padding: 1.2rem;
+		height: auto;
+		padding: 1rem;
 	}
 
 @media (min-width: 1200px) {
 
 .skills__item {
 			
-			float: left;
-			margin: 1rem;
-			width: 30%
+			/*float: left;*/
+			margin: 1rem auto;
+			width: auto
 	}
 	}
 
@@ -1057,37 +1060,6 @@ a {
 		}
 
 .skills__head {text-align: center;}
-
-.skills__desc {
-		font-weight: 300;
-		color: #6d6d6d;
-		text-align: left;
-		margin: 0 auto;
-		line-height: 1.5;
-		font-size: 1.2rem;
-		text-align: center;
-		font-size: 1.1rem;
-		color: #eee;
-	}
-
-.skills__desc a {
-			color: #287b8e;
-		}
-
-@media (min-width:500px) {
-
-.skills__desc {
-			max-width: 400px;
-			padding-left: 0;
-			padding-right: 0
-	}
-	}
-
-@media (min-width: 800px) {
-
-.skills__desc {text-align: left
-	}
-	}
 
 .contact__head {
 		font-weight: 300;

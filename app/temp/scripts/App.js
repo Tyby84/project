@@ -12898,11 +12898,6 @@ var Skill = function Skill(props) {
 			'h3',
 			{ className: 'skills__head' },
 			props.title
-		),
-		_react2.default.createElement(
-			'p',
-			{ className: 'skills__desc' },
-			props.desc
 		)
 	);
 };
