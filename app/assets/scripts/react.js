@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import ReactDom from 'react-dom';
 
 const Skills = (props) => {
@@ -42,4 +42,4 @@ const Skill = (props) => {
 ReactDom.render(
 	<Skills />,
   document.getElementById('toSkills')
-);
+);*/

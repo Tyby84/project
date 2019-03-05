@@ -985,34 +985,14 @@ a {
 		border-bottom: 3px solid #fff;
 	}
 
-.toSkills{
-	background-color: #fff;
-}
-
 .skills {
 	padding-top: 1rem;
-	padding-bottom: 2rem;
-	background-color: #5f5f5f;
+	padding-bottom: 20rem;
+	background-color: #287b8e;
 	color: #fff;
-	
-	
-	/*&__desc {
-		@mixin desc;
-		text-align: center;
-		font-size: 1.1rem;
-		color: #eee;
-		a {
-			color: $main;
-		}
+	position: relative;
 		
-		@mixin small {
-			max-width: 400px;
-			padding-left: 0;
-			padding-right: 0;
-		}
-		
-		@mixin medium {text-align: left;}
-	}*/
+	
 }
 
 @media (min-width: 1200px) {
@@ -1020,46 +1000,99 @@ a {
 .skills {
 		-webkit-clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
 		        clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0)
+		
+	
 }
 	}
 
-.skills__item {
-		-webkit-transition: all .5s ease-out;
-		transition: all .5s ease-out;
-		-webkit-transform: scale(0);
-		        transform: scale(0);
-		opacity: 0;
-		-webkit-box-shadow: 1px 1px 5px #eee;
-		        box-shadow: 1px 1px 5px #eee;
-		background: rgba(40,123,142, .2);
-		margin-bottom: 1rem;
-		height: auto;
-		padding: 1rem;
+.skills__container{
+		
 	}
 
-@media (min-width: 1200px) {
+.skills__hexa{
+		position: absolute;
+		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		-webkit-transform: rotateZ(90deg);
+		        transform: rotateZ(90deg);
+		height: 120px;
+		width: 120px;
+		cursor: pointer;
+	}
 
-.skills__item {
+.skills__hexa p{
+				-webkit-transform: rotateZ(-90deg);
+				        transform: rotateZ(-90deg);
+				color: #fff;
+				text-align: left;
+			}
+
+.skills__hexa__html{
+			top: 150px;
+			left: 100px;
+			background-color: #222;
 			
-			/*float: left;*/
-			margin: 1rem auto;
-			width: auto
-	}
-	}
-
-.skills__item img {
-			width: 60px;
-			height: 60px;
-			margin: 0 auto;
 		}
 
-.skills__item-show{
-			opacity: 1;
-			-webkit-transform: scale(1);
-			        transform: scale(1);
+.skills__hexa__css{
+			top: 210px;
+			left: 200px;
+			background-color: #eee;
 		}
 
-.skills__head {text-align: center;}
+.skills__hexa__css p{
+				color: #222;
+				padding-left: 8px;
+			}
+
+.skills__hexa__js{
+			top: 275px;
+			left: 300px;
+			background-color: #ba1919;
+		}
+
+.skills__hexa__js p{
+				margin-right: -10px;
+				padding-bottom: 5px;
+			}
+
+.skills__hexa__jq{
+			top: 145px;
+			left: 300px;
+			background-color: #ad4d10;
+		}
+
+.skills__hexa__php{
+			top: 210px;
+			left: 400px;
+			background-color: #0d9b6f;
+		}
+
+.skills__hexa__php p{
+				padding-left: 10px;
+				
+			}
+
+.skills__hexa__wordpress{
+			top: 275px;
+			left: 500px;
+			background-color: #110b57;
+		}
+
+.skills__hexa__wordpress p{
+				margin-left: -10px;
+				padding-top: 10px;
+			}
+
+.skills__hexa__ga{
+			top: 210px;
+			left: 600px;
+			background-color: #178004;
+		}
+
+.skills__hexa__ga p{
+				padding-left: 10px;
+			}
 
 .contact__head {
 		font-weight: 300;
