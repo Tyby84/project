@@ -9,12 +9,17 @@
 		
 		&:last-child {margin-bottom: 0;}
 		
+		span{
+			font-size: 1.2rem;
+			margin-left: .5rem;
+		}
+		
 		a {
 			color: #fff;
 			transition: all .5s ease-out;
 			
 			&:hover {
-			color: #222;
+			color: #adadad;;
 				
 		}
 		}
@@ -36,7 +41,7 @@
 		&__time {
 			padding: .4rem;
 			margin: .2rem auto .2rem auto;
-			border: 1px solid #fff;		
+					
 		}
 	}
 	&__copy {

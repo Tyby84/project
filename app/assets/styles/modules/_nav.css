@@ -54,9 +54,10 @@
 			@mixin fixLi;
 			font-size: 1rem;
 			margin-bottom: .5rem;
-			box-shadow: 2px 2px 2px #222;
+			color: #fff;
+			transition: color .5s;
 			&:hover {
-				box-shadow: 1px 1px 2px #222;
+				color: #adadad;;
 
 					}
 				}

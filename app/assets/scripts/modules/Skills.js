@@ -2,23 +2,19 @@ import $ from 'jquery';
 
 class Skills {
 	constructor() {
-		this.title = $('#skills');
-		this.item = $('div.skills__item');
+		
 		this.showSkills();
 	}
 	
 	showSkills() {
-		var that = this;
-		var item = this.item;
-		console.log(item);
-		new Waypoint({
-			element: that.title[0],
-			handler: function() {
-				that.item.addClass('skills__item-show');
-			},
-			offset:'35%'
+		$('.skills__hexa').hover(function(){
+			$(this).children().css({"opacity": 1});
+			$('.skills__instruct').fadeOut(500);
 		});
+		
 	}
 }
 
 export default Skills;
+
+

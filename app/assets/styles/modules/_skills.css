@@ -10,8 +10,12 @@
 	}
 	
 	
-	&__container{
-		
+	&__instruct{
+		position: absolute;
+		top: 150px;
+		right: 150px;
+		font-size: 1.1rem;
+		font-weight: 300;
 	}
 	
 	&__hexa{
@@ -24,8 +28,10 @@
 			p{
 				transform: rotateZ(-90deg);
 				color: #fff;
-				text-align: left;
+				opacity: 0;
+				
 			}
+		
 		&__html{
 			top: 150px;
 			left: 100px;

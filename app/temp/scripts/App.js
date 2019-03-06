@@ -10590,6 +10590,8 @@ var Nav = function () {
 			(0, _jquery2.default)('.nav__li').click(function () {
 				var menuItem = (0, _jquery2.default)(this);
 				(0, _jquery2.default)('.nav__li').removeClass('nav__li--active');
+				(0, _jquery2.default)('.nav__mobile__li').removeClass('nav__li--active');
+
 				menuItem.addClass('nav__li--active');
 			});
 		}
@@ -10620,6 +10622,7 @@ var Nav = function () {
 						that.navbar.removeClass('nav--scrolling');
 						that.liTags.removeClass('nav__li--scrolling');
 						(0, _jquery2.default)('.nav__li').removeClass('nav__li--active');
+						(0, _jquery2.default)('.nav__mobile__li').removeClass('nav__li--active');
 					}
 				},
 				offset: '10%'
@@ -10645,19 +10648,22 @@ var Nav = function () {
 				element: currEl,
 				handler: function handler() {
 					(0, _jquery2.default)('.nav__li').removeClass('nav__li--active');
+					/*$('.nav__mobile__li').removeClass('nav__li--active');*/
 					(0, _jquery2.default)('nav a#skills-link > li').addClass('nav__li--active');
+					/*$('.nav__mobile__li').removeClass('nav__li--active');*/
 				},
 				offset: '10%'
 			});
-			new Waypoint({
-				element: currContEl,
-				handler: function handler() {
-					(0, _jquery2.default)('.nav__li').removeClass('nav__li--active');
-					(0, _jquery2.default)('nav a#contact-link > li').addClass('nav__li--active');
-				},
-				offset: '80%'
-
-			});
+			/*new Waypoint({
+   	element: currContEl,
+   	handler: function() {
+   		$('.nav__li').removeClass('nav__li--active');
+   		$('nav a#contact-link > li').addClass('nav__li--active');
+   	},
+   	offset: '80%'
+   	
+   	
+   });*/
 		}
 	}]);
 
@@ -11898,23 +11904,15 @@ var Skills = function () {
 	function Skills() {
 		_classCallCheck(this, Skills);
 
-		this.title = (0, _jquery2.default)('#skills');
-		this.item = (0, _jquery2.default)('div.skills__item');
 		this.showSkills();
 	}
 
 	_createClass(Skills, [{
 		key: 'showSkills',
 		value: function showSkills() {
-			var that = this;
-			var item = this.item;
-			console.log(item);
-			new Waypoint({
-				element: that.title[0],
-				handler: function handler() {
-					that.item.addClass('skills__item-show');
-				},
-				offset: '35%'
+			(0, _jquery2.default)('.skills__hexa').hover(function () {
+				(0, _jquery2.default)(this).children().css({ "opacity": 1 });
+				(0, _jquery2.default)('.skills__instruct').fadeOut(500);
 			});
 		}
 	}]);

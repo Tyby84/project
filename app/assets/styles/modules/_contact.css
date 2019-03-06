@@ -3,14 +3,14 @@
 	&__head {
 		@mixin desc;		
 		font-weight: 300;
-		margin: 0 auto 1rem auto;
+		margin: 0 auto 2rem auto;
 		
 		@mixin medium {
 			max-width: 600px;
 			
 		}
 		@mixin large {
-			max-width: 800px;	
+			max-width: 600px;	
 		}
 	}
 }

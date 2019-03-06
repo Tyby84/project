@@ -1,11 +1,12 @@
 body{
 	max-width: 100%;
 	overflow-x: hidden;
-	font-family: 'Raleway', sans-serif;
+	
 	line-height: 1.7;
 }
 * {
 	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
 }
 
 img {

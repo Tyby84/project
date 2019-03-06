@@ -21,6 +21,8 @@ class Nav {
 		$('.nav__li').click(function() {
 			var menuItem = $(this);
 			$('.nav__li').removeClass('nav__li--active');
+			$('.nav__mobile__li').removeClass('nav__li--active');
+			
 			menuItem.addClass('nav__li--active');
 		});
 			
@@ -54,6 +56,7 @@ class Nav {
 					that.navbar.removeClass('nav--scrolling');
 					that.liTags.removeClass('nav__li--scrolling');
 					$('.nav__li').removeClass('nav__li--active');
+					$('.nav__mobile__li').removeClass('nav__li--active');
 				}
 			},
 			offset: '10%'
@@ -79,12 +82,13 @@ class Nav {
 			element: currEl,
 			handler: function() {
 					$('.nav__li').removeClass('nav__li--active');
+					/*$('.nav__mobile__li').removeClass('nav__li--active');*/
 					$('nav a#skills-link > li').addClass('nav__li--active');
-				
+					/*$('.nav__mobile__li').removeClass('nav__li--active');*/
 			},
 			offset:'10%'
 		});
-		new Waypoint({
+		/*new Waypoint({
 			element: currContEl,
 			handler: function() {
 				$('.nav__li').removeClass('nav__li--active');
@@ -93,7 +97,7 @@ class Nav {
 			offset: '80%'
 			
 			
-		});
+		});*/
 	}
 }
 

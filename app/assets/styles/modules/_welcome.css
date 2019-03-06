@@ -10,7 +10,7 @@
 	}
 	@mixin large {
 		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-		background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-large.jpg);
+		background-image: linear-gradient(to bottom, rgba(5, 92, 118, 0.6),rgba(5, 92, 118, 0.75)), url(../../assets/images/tech-mid.jpg);
 	background-size: cover;
 	}
 	display: flex;
@@ -28,8 +28,8 @@
 			display: block;
 			animation: titleRight 2s ease-out 1s;
 			animation-fill-mode: backwards;
-			font-size: 2.5rem;
-			font-weight: 700;
+			font-size: 2.6rem;
+			font-weight: 400;
 			letter-spacing: 3px;
 		}
 		&__sub {
@@ -42,7 +42,7 @@
 	&__desc {
 		display: block;
 		color: #fff;
-		font-size: 1.8rem;
+		font-size: 2rem;
 		letter-spacing: 1.1;
 		animation: titleUp 1s ease-out 3s;
 		animation-fill-mode: backwards;

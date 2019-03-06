@@ -453,13 +453,14 @@ template {
 body{
 	max-width: 100%;
 	overflow-x: hidden;
-	font-family: 'Raleway', sans-serif;
+	
 	line-height: 1.7;
 }
 
 * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
 }
 
 img {
@@ -512,8 +513,8 @@ a {
 .welcome {
 		-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 		        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(5, 92, 118, 0.6)),to(rgba(6, 33, 105, 0.5))), url(../../assets/images/tech-large.jpg);
-		background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-large.jpg);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 92, 118, 0.6)),to(rgba(5, 92, 118, 0.75))), url(../../assets/images/tech-mid.jpg);
+		background-image: linear-gradient(to bottom, rgba(5, 92, 118, 0.6),rgba(5, 92, 118, 0.75)), url(../../assets/images/tech-mid.jpg);
 	background-size: cover
 	
 	
@@ -535,8 +536,8 @@ a {
 			        animation: titleRight 2s ease-out 1s;
 			-webkit-animation-fill-mode: backwards;
 			        animation-fill-mode: backwards;
-			font-size: 2.5rem;
-			font-weight: 700;
+			font-size: 2.6rem;
+			font-weight: 400;
 			letter-spacing: 3px;
 		}
 
@@ -552,7 +553,7 @@ a {
 .welcome__desc {
 		display: block;
 		color: #fff;
-		font-size: 1.8rem;
+		font-size: 2rem;
 		letter-spacing: 1.1;
 		-webkit-animation: titleUp 1s ease-out 3s;
 		        animation: titleUp 1s ease-out 3s;
@@ -1005,8 +1006,12 @@ a {
 }
 	}
 
-.skills__container{
-		
+.skills__instruct{
+		position: absolute;
+		top: 150px;
+		right: 150px;
+		font-size: 1.1rem;
+		font-weight: 300;
 	}
 
 .skills__hexa{
@@ -1024,7 +1029,8 @@ a {
 				-webkit-transform: rotateZ(-90deg);
 				        transform: rotateZ(-90deg);
 				color: #fff;
-				text-align: left;
+				opacity: 0;
+				
 			}
 
 .skills__hexa__html{
@@ -1102,7 +1108,7 @@ a {
 		line-height: 1.5;
 		font-size: 1.2rem;		
 		font-weight: 300;
-		margin: 0 auto 1rem auto;
+		margin: 0 auto 2rem auto;
 	}
 
 @media (min-width: 800px) {
@@ -1115,7 +1121,7 @@ a {
 @media (min-width: 1200px) {
 
 .contact__head {
-			max-width: 800px
+			max-width: 600px
 	}
 	}
 
@@ -1249,6 +1255,11 @@ a {
 				 margin-bottom: 5px;
 			 }
 
+.modal__footer span{
+			font-size: 1.5rem;
+			margin-left: .5rem;
+		}
+
 .nav {
 	display: none;
 	
@@ -1342,13 +1353,13 @@ a {
 			padding: .3rem;
 			font-size: 1rem;
 			margin-bottom: .5rem;
-			-webkit-box-shadow: 2px 2px 2px #222;
-			        box-shadow: 2px 2px 2px #222;
+			color: #fff;
+			-webkit-transition: color .5s;
+			transition: color .5s;
 				}
 
 .nav__footer__li:hover {
-				-webkit-box-shadow: 1px 1px 2px #222;
-				        box-shadow: 1px 1px 2px #222;
+				color: #adadad;;
 
 					}
 
@@ -1367,6 +1378,11 @@ a {
 
 .footer__icon:last-child {margin-bottom: 0;}
 
+.footer__icon span{
+			font-size: 1.2rem;
+			margin-left: .5rem;
+		}
+
 .footer__icon a {
 			color: #fff;
 			-webkit-transition: all .5s ease-out;
@@ -1374,7 +1390,7 @@ a {
 		}
 
 .footer__icon a:hover {
-			color: #222;
+			color: #adadad;;
 				
 		}
 
@@ -1397,7 +1413,7 @@ a {
 .footer__timing__time {
 			padding: .4rem;
 			margin: .2rem auto .2rem auto;
-			border: 1px solid #fff;		
+					
 		}
 
 .footer__copy {
@@ -1589,13 +1605,17 @@ a {
 @-webkit-keyframes barUp {
 	0% {
 		opacity: 0;
-		-webkit-transform: rotate(720deg) scale(0);
-		        transform: rotate(720deg) scale(0);
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	50%{
+		-webkit-transform: scale(1.3);
+		        transform: scale(1.3);
 	}
 	100% {
 		opacity: 1;
-		-webkit-transform: rotate(0) scale(1);
-		        transform: rotate(0) scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 	
 	
@@ -1604,20 +1624,25 @@ a {
 @keyframes barUp {
 	0% {
 		opacity: 0;
-		-webkit-transform: rotate(720deg) scale(0);
-		        transform: rotate(720deg) scale(0);
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	50%{
+		-webkit-transform: scale(1.3);
+		        transform: scale(1.3);
 	}
 	100% {
 		opacity: 1;
-		-webkit-transform: rotate(0) scale(1);
-		        transform: rotate(0) scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 	
 	
 }
 
 .logos{
-	margin-top: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	width: 100%;
 	height: 80px;
 	position: relative;
