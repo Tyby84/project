@@ -3,10 +3,25 @@
 	
 	&--item--container{
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		@mixin medium{
+			flex-direction: row;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			
+		}
+		@mixin large{
+			flex-wrap: nowrap;
+		}
+		
 	}
 	&__item{
-		max-width: 17rem;
+		
+		width: 20rem;
+		@mixin large{
+			width: 17rem;
+		}
 		
 		padding: 0 1rem .5rem 1rem;
 		

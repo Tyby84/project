@@ -88,16 +88,16 @@ class Nav {
 			},
 			offset:'10%'
 		});
-		/*new Waypoint({
+		new Waypoint({
 			element: currContEl,
 			handler: function() {
 				$('.nav__li').removeClass('nav__li--active');
 				$('nav a#contact-link > li').addClass('nav__li--active');
 			},
-			offset: '80%'
+			offset: '40%'
 			
 			
-		});*/
+		});
 	}
 }
 

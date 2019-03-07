@@ -478,9 +478,16 @@ a {
 .welcome {
 	position: relative;
 	height: 100vh;
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(5, 92, 118, 0.6)),to(rgba(6, 33, 105, 0.5))), url(../../assets/images/tech-mob.jpg);
-	background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-mob.jpg);
+	background-image: url(../../assets/images/template.svg);
+	background-color: #888;
+	background-blend-mode: multiply;
+	background-position: center center;
 	background-size: cover;
+	/*@mixin large {
+		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+		background-image: linear-gradient(to bottom, rgba(5, 92, 118, 0.6),rgba(5, 92, 118, 0.75)), url(../../assets/images/tech-mid.jpg);
+	background-size: cover;
+	}*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -498,23 +505,9 @@ a {
 @media (min-width: 800px) {
 
 .welcome {
-		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(5, 92, 118, 0.6)),to(rgba(6, 33, 105, 0.5))), url(../../assets/images/tech-mid.jpg);
-		background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-mid.jpg);
-	background-size: cover;
-		-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-		        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%)
-	
-	
-}
-	}
-
-@media (min-width: 1200px) {
-
-.welcome {
-		-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-		        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 92, 118, 0.6)),to(rgba(5, 92, 118, 0.75))), url(../../assets/images/tech-mid.jpg);
-		background-image: linear-gradient(to bottom, rgba(5, 92, 118, 0.6),rgba(5, 92, 118, 0.75)), url(../../assets/images/tech-mid.jpg);
+		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+		        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+		background-image: radial-gradient(circle, rgba(5, 92, 118, .8),rgba(5, 92, 118, 0.75)), url(../../assets/images/template.svg);
 	background-size: cover
 	
 	
@@ -843,15 +836,52 @@ a {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		
+	}
+
+@media (min-width: 800px) {
+
+.about--item--container{
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-ms-flex-pack: distribute;
+			    justify-content: space-around;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap
+		
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.about--item--container{
+			-ms-flex-wrap: nowrap;
+			    flex-wrap: nowrap
+		
+	}
 	}
 
 .about__item{
-		max-width: 17rem;
+		
+		width: 20rem;
 		
 		padding: 0 1rem .5rem 1rem;
+	}
+
+@media (min-width: 1200px) {
+
+.about__item{
+			width: 17rem
+	}
 	}
 
 .about__item__title{
@@ -987,9 +1017,13 @@ a {
 	}
 
 .skills {
+	height: 80vh;
 	padding-top: 1rem;
 	padding-bottom: 20rem;
-	background-color: #287b8e;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.8))), url(../../assets/images/rocket.png);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)), url(../../assets/images/rocket.png);
+	background-size: cover;
+	background-position:;
 	color: #fff;
 	position: relative;
 		
@@ -999,8 +1033,8 @@ a {
 @media (min-width: 1200px) {
 
 .skills {
-		-webkit-clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
-		        clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0)
+		-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+		        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%)
 		
 	
 }
@@ -1012,6 +1046,7 @@ a {
 		right: 150px;
 		font-size: 1.1rem;
 		font-weight: 300;
+		text-align: center;
 	}
 
 .skills__hexa{
@@ -1023,6 +1058,7 @@ a {
 		height: 120px;
 		width: 120px;
 		cursor: pointer;
+		opacity: .85;
 	}
 
 .skills__hexa p{
@@ -1449,8 +1485,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 92, 118, 0.9)),to(rgba(6, 33, 105, 0.9)));
-	background-image: linear-gradient(to bottom, rgba(5, 92, 118, 0.9),rgba(6, 33, 105, 0.9));
+	background-color: rgba(0,0,0,.5);
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
@@ -1503,7 +1538,7 @@ a {
 		color: #fff;
 		padding: .3rem;
 		margin: .5rem 0 0 0;
-		text-align: center;
+		text-align: left;
 		border-top-left-radius: 1rem;
 		border-bottom-right-radius: 1rem;
 		-webkit-transition: all .5s ease-out;
@@ -1511,7 +1546,7 @@ a {
 	}
 
 .nav__mobile__li:hover {
-			background-color: rgba(0, 0, 0, 0.5);
+			color: #c9c9c9;
 			
 		}
 

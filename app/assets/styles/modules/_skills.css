@@ -1,12 +1,14 @@
 .skills {
+	height: 80vh;
 	padding-top: 1rem;
 	padding-bottom: 20rem;
-	background-color: $main;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)), url(../../assets/images/rocket.png);
+	background-size: cover;
+	background-position:;
 	color: #fff;
 	position: relative;
 	@mixin large {
-		clip-path: polygon(50% 2%, 100% 0, 100% 100%, 50% 98%, 0 100%, 0 0);
-
+		clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 	}
 	
 	
@@ -16,6 +18,7 @@
 		right: 150px;
 		font-size: 1.1rem;
 		font-weight: 300;
+		text-align: center;
 	}
 	
 	&__hexa{
@@ -25,6 +28,7 @@
 		height: 120px;
 		width: 120px;
 		cursor: pointer;
+		opacity: .85;
 			p{
 				transform: rotateZ(-90deg);
 				color: #fff;

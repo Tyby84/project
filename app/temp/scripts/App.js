@@ -10654,16 +10654,15 @@ var Nav = function () {
 				},
 				offset: '10%'
 			});
-			/*new Waypoint({
-   	element: currContEl,
-   	handler: function() {
-   		$('.nav__li').removeClass('nav__li--active');
-   		$('nav a#contact-link > li').addClass('nav__li--active');
-   	},
-   	offset: '80%'
-   	
-   	
-   });*/
+			new Waypoint({
+				element: currContEl,
+				handler: function handler() {
+					(0, _jquery2.default)('.nav__li').removeClass('nav__li--active');
+					(0, _jquery2.default)('nav a#contact-link > li').addClass('nav__li--active');
+				},
+				offset: '40%'
+
+			});
 		}
 	}]);
 

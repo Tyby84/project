@@ -1,18 +1,22 @@
 .welcome {
 	position: relative;
 	height: 100vh;
-	background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-mob.jpg);
+	background-image: url(../../assets/images/template.svg);
+	background-color: #888;
+	background-blend-mode: multiply;
+	background-position: center center;
 	background-size: cover;
 	@mixin medium {
-		background-image: linear-gradient(to right bottom, rgba(5, 92, 118, 0.6),rgba(6, 33, 105, 0.5)), url(../../assets/images/tech-mid.jpg);
+		clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+		background-image: radial-gradient(circle, rgba(5, 92, 118, .8),rgba(5, 92, 118, 0.75)), url(../../assets/images/template.svg);
 	background-size: cover;
-		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+		
 	}
-	@mixin large {
+	/*@mixin large {
 		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 		background-image: linear-gradient(to bottom, rgba(5, 92, 118, 0.6),rgba(5, 92, 118, 0.75)), url(../../assets/images/tech-mid.jpg);
 	background-size: cover;
-	}
+	}*/
 	display: flex;
 		justify-content: center;
 		align-items: center;
