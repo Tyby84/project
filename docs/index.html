@@ -6,21 +6,22 @@
 	<meta name="description" content="This website is about to show my web development skills: HTML5, CSS3 - Using PostCSS and following the BEM methodology, Javascript - OOP and modular pattern with Jquery and ES6, NPM, Gulp, Webpack." />
 	<meta name="keywords" content="web development, portfolio" />
 	<title>Tibor Fenyvesi</title>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 	
-	<link rel="stylesheet" href="assets/styles/styles-b902757ed6.css"/>
+	<link rel="stylesheet" href="assets/styles/styles-ffd2db7f87.css"/>
 	
-	<script src="assets/scripts/Vendor-53ee227c43.js"></script>
+	<script src="assets/scripts/Vendor-8bcb4b7b2d.js"></script>
 	
 </head>
 <body>
 
 	<nav class="nav">
 		<ul class="nav__ul">
-			<a id="about-link" href="#about"><li class="nav__li">About</li></a>
-			<a id="skills-link" href="#skills"><li class="nav__li">Skills</li></a>
-			<a id="contact-link" href="#contact"><li class="nav__li">Contact</li></a>
+			<a id="about-link" href="#about"><li class="nav__li"><i class="fas fa-book-open"></i> About</li></a>
+			<a id="skills-link" href="#skills"><li class="nav__li"><i class="fas fa-layer-group"></i> Skills</li></a>
+			<a id="contact-link" href="#contact"><li class="nav__li"><i class="far fa-compass"></i> Contact</li></a>
 		</ul>
 	</nav>
 	<div class="menu-bar menu-bar-animated">
@@ -29,9 +30,9 @@
 		<nav class="nav__mobile">
 			
 			<ul class="nav__mobile__ul">
-				<a id="about-link" href="#about"><li class="nav__mobile__li">About</li></a>
-				<a id="skills-link" href="#skills"><li class="nav__mobile__li">Skills</li></a>
-				<a id="contact-link" href="#contact"><li class="nav__mobile__li">Contact</li></a>
+				<a id="about-link" href="#about"><li class="nav__mobile__li"><i class="fas fa-book-open"></i> About</li></a>
+				<a id="skills-link" href="#skills"><li class="nav__mobile__li"><i class="fas fa-layer-group"></i> Skills</li></a>
+				<a id="contact-link" href="#contact"><li class="nav__mobile__li"><i class="far fa-compass"></i> Contact</li></a>
 			</ul>
 		</nav>
 	
@@ -40,41 +41,60 @@
 		
 		<div class="welcome--text">
 			<h1 class="welcome__title">
-				<span class="welcome__title__main">Web Development</span>
-				<span class="welcome__title__sub">by Tibor Fenyvesi</span>
-			</h1>
-			<!--<div class="welcome--anim"></div>-->
-			<!--<h5 class="welcome__ready">Ready <span class="separator">_</span></h5>-->
-			<a id="about-link" href="#about" class="btn btn-white btn-animated">Find out more!</a>
-
+				<span class="welcome__title__main">Pinewood Web</span>
+				<span class="welcome__title__sub">Website building</span>
+			</h1>-
+<!--
+			<div class="welcome__separator"></div>
+-->
+			<span class="welcome__desc">
+				Creating awesome Websites!
+			</span>
 		</div>
+		
 	</div><!--welcome-->
 	
 	<div class="about">
 		<div class="container">
-			<h1 class="section-title" id="about" data-matching-link="#about-link">About Me</h1>
-			<div class="row--flex">
-				
-			<div class="about__pic">
-				<img class="lazyload" src="assets/images/portre-600-640.jpg" alt="Picture about me">
-			</div>
-			<div class="about__desc"><p>I have allways been interested how websites are built and how do they work. I made my first website in 2016. I used HTML, CSS and JQuery plugins, however I was keen to learn more technologies to build better and more efficient Webpages.</p>
-			<p> I decided to keep learning and improving my skills and my knowledge. I attanded on online courses, learnt Javascript and Web Development tools on different projects, made several types of websites.</p>
-			<p>Nowadays, I am using the latest web technologies and methodologies. I have the motivation and enthusiasm to keep improve myself and my webpages. I am looking positively into the future and ready for the new technologies and challanges! <br>
-			<span>Tibor Fenyvesi</span></p>
-			</div>
-			</div>
+			<h1 class="section-title" id="about" data-matching-link="#about-link">About Us</h1>
+			<div class="about--item--container">
+				<div class="about__item">
+					<h3 class="about__item__title">Website</h3>
+					<p class="about__item__desc">We create you a fully responsive websites, so your site will be 
+					available on phones, tablets and desktop screens as well!</p>
+				</div>
+				<div class="about__item">
+					<h3 class="about__item__title">Social Media</h3>
+					<p class="about__item__desc">We help to create Facebook business page and advertise your company in front of million active Facebook user!</p>
+				</div>
+				<div class="about__item">
+					<h3 class="about__item__title">SEO</h3>
+					<p class="about__item__desc">Every Website we make are Search Engine Friendly so your ranking is improving from the first day of getting Online!</p>
+				</div>
+				<div class="about__item">
+					<h3 class="about__item__title">Google Analytics</h3>
+					<p class="about__item__desc">In order to make statistics and analytics about your vistors and their actioins we use Google Analytics!</p>
+				</div>
+			
+			</div><!--row--flex-->
 		</div>
 	</div><!--about-->
 	
 	<div class="skills">
 		<div class="container">
 			<h1 class="section-title section-title__light" id="skills" data-matching-link="#skills-link">My Skills</h1>
-			<div class="row--flex row--flex--wrap">
-			<div id="toSkills"></div>
-			</div>
-		</div>
-	</div><!--skills-->
+			<div class="skills__container">
+				<div class="skills__hexa skills__hexa__html"><p>HTML5</p></div>		
+				<div class="skills__hexa skills__hexa__css"><p>CSS3</p></div>		
+				<div class="skills__hexa skills__hexa__js"><p>JavaScript</p></div>		
+				<div class="skills__hexa skills__hexa__jq"><p>JQuery</p></div>		
+				<div class="skills__hexa skills__hexa__php"><p>PHP</p></div>		
+				<div class="skills__hexa skills__hexa__wordpress"><p>Wordpress</p></div>		
+				<div class="skills__hexa skills__hexa__ga"><p>Google Analytics</p></div>		
+				</div>
+				<div class="skills__instruct">Hover over the hexagon <br> to reveal the skills!</div>	
+	</div>
+	</div>
 	
 	<div class="contact">
 	
@@ -95,7 +115,7 @@
 				<div class="logos__cont">
 					<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><img class="logos__img" src="assets/images/icons/facebook-good.png" alt="FB"></a>
 					<a href="https://github.com/Tyby84" target="_blank"><img class="logos__img" src="assets/images/icons/github-394322_640.png" alt="github"></a>
-					<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><img class="logos__img" src="assets/images/icons/linked-in-2668692_640.png" alt="ln"></a>
+					<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><img class="logos__img" src="assets/images/icons/linked-in-good.png" alt="ln"></a>
 				</div>
 			</div>	
 		
@@ -119,13 +139,13 @@
 				
 			<div class="row--flex row--flex--wrap">
 				<div class="modal__footer-fb">
-					<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><i class="fab fa-facebook"></i><span>FaceBook</span></a>
 				</div>
 				<div class="modal__footer-li">
-					<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
 				</div>
 				<div class="modal__footer-git">
-					<a href="https://github.com/Tyby84" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://github.com/Tyby84" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>
 				</div>
 			</div>
 		</div>
@@ -135,13 +155,13 @@
 		<div class="container">
 			<div class="row--flex row--flex--wrap--col">
 					<div class="footer__icon">
-						<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><i class="fab fa-facebook"></i></a>
+						<a href="https://www.facebook.com/fenyvesi.tibor.1" target="_blank"><i class="fab fa-facebook"></i><span>FaceBook</span></a>
 					</div>
 					<div class="footer__icon">
-						<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://www.linkedin.com/in/tibor-fenyvesi-5b4198136/" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
 					</div>
 					<div class="footer__icon">
-						<a href="https://github.com/Tyby84" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://github.com/Tyby84" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>
 					</div>
 				</div>
 				<div class="footer__timing">
@@ -166,15 +186,15 @@
 				<div class="nav__footer">
 					
 			<ul class="nav__footer__ul">
-				<a id="about-link" href="#about"><li class="nav__footer__li">About</li></a>
-				<a id="skills-link" href="#skills"><li class="nav__footer__li">Skills</li></a>
-				<a id="contact-link" href="#contact"><li class="nav__footer__li">Contact</li></a>
+				<a id="about-link" href="#about"><li class="nav__footer__li"><i class="fas fa-book-open"></i> About</li></a>
+				<a id="skills-link" href="#skills"><li class="nav__footer__li"><i class="fas fa-layer-group"></i> Skills</li></a>
+				<a id="contact-link" href="#contact"><li class="nav__footer__li"><i class="far fa-compass"></i> Contact</li></a>
 			</ul>
 						
 				</div>
 		</div>
 	</footer>
-		<script src="assets/scripts/App-8d0002fd36.js"></script>
+		<script src="assets/scripts/App-1fb5759328.js"></script>
 		
 </body>
 </html>
