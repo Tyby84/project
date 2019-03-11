@@ -60,6 +60,12 @@
 				color: #adadad;;
 
 					}
+			i{
+				display: none;
+				@mixin medium{
+					display: inline-block;
+				}
+			}
 				}
 		}
 	

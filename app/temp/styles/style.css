@@ -477,17 +477,13 @@ a {
 
 .welcome {
 	position: relative;
-	height: 100vh;
+	height: 70vh;
 	background-image: url(../../assets/images/template.svg);
 	background-color: #888;
 	background-blend-mode: multiply;
 	background-position: center center;
-	background-size: cover;
-	/*@mixin large {
-		clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-		background-image: linear-gradient(to bottom, rgba(5, 92, 118, 0.6),rgba(5, 92, 118, 0.75)), url(../../assets/images/tech-mid.jpg);
-	background-size: cover;
-	}*/
+	background-size:cover;
+	background-repeat: no-repeat;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -505,6 +501,7 @@ a {
 @media (min-width: 800px) {
 
 .welcome {
+		height: 90vh;
 		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 		        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 		background-image: radial-gradient(circle, rgba(5, 92, 118, .8),rgba(5, 92, 118, 0.75)), url(../../assets/images/template.svg);
@@ -568,10 +565,22 @@ a {
 		color: #fff;
 		font-size: 2rem;
 		letter-spacing: 1.1;
-		-webkit-animation: titleUp 1s ease-out 3s;
-		        animation: titleUp 1s ease-out 3s;
+		-webkit-animation: titleUp 1s ease-out 1.5s;
+		        animation: titleUp 1s ease-out 1.5s;
 		-webkit-animation-fill-mode: backwards;
 		        animation-fill-mode: backwards;
+		
+	}
+
+@media (min-width: 800px) {
+
+.welcome__desc {
+			-webkit-animation: titleUp 1s ease-out 3s;
+			        animation: titleUp 1s ease-out 3s;
+			-webkit-animation-fill-mode: backwards;
+			        animation-fill-mode: backwards
+		
+	}
 	}
 
 .welcome__separator{
@@ -1041,7 +1050,7 @@ a {
 	}
 
 .skills {
-	height: 80vh;
+	height: auto;
 	padding-top: 1rem;
 	padding-bottom: 20rem;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.8))), url(../../assets/images/rocket.png);
@@ -1210,6 +1219,10 @@ a {
 			}
 	}
 	}
+
+.contact {
+	padding: 1rem;
+}
 
 .contact__head {
 		font-weight: 300;
@@ -1503,6 +1516,17 @@ a {
 
 					}
 
+.nav__footer__li i{
+				display: none;
+			}
+
+@media (min-width: 800px) {
+
+.nav__footer__li i{
+					display: inline-block
+			}
+	}
+
 .footer {
 	position: relative;
 	background-color: #525252;
@@ -1598,7 +1622,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.7);
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
@@ -1789,15 +1813,21 @@ a {
 }
 
 .logos{
+	display: none;
+}
+
+@media (min-width: 800px) {
+
+.logos{
+	display: block;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	width: 100%;
 	height: 80px;
-	position: relative;
-		
+	position: relative
 }
-
-.logos__cont {
+	
+	.logos__cont {
 		width: auto;
 		position: absolute;
 		left: 55%;
@@ -1814,11 +1844,11 @@ a {
 		-webkit-animation-timing-function:ease-in-out;
 		        animation-timing-function:ease-in-out;
 	}
-
-.logos__cont:hover {
+		.logos__cont:hover {
 			-webkit-animation-play-state: paused;
 			        animation-play-state: paused;
 		}
+	}
 
 .logos__img {
 	max-height: 60px;

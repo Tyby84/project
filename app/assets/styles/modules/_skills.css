@@ -1,5 +1,5 @@
 .skills {
-	height: 80vh;
+	height: auto;
 	padding-top: 1rem;
 	padding-bottom: 20rem;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)), url(../../assets/images/rocket.png);

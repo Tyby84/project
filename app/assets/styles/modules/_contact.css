@@ -1,5 +1,5 @@
 .contact {
-	
+	padding: 1rem;
 	&__head {
 		@mixin desc;		
 		font-weight: 300;
