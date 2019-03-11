@@ -1136,28 +1136,32 @@ a {
 				        transform: rotateZ(-90deg);
 				color: #fff;
 				opacity: 0;
-				
-			}
+				}
 		
 		.skills__hexa__html{
 			top: 150px;
 			left: 100px;
-			background-color: #222;
+			background-color: #003840;
 			
 		}
 		.skills__hexa__css{
 			top: 210px;
 			left: 200px;
-			background-color: #eee;
+			background-color: #005A5B;
 		}
 			.skills__hexa__css p{
-				color: #222;
+				
 				padding-left: 8px;
 			}
+				@media (min-width:500px) {
+			.skills__hexa__css p{
+					padding-left: 0
+			}
+	}
 		.skills__hexa__js{
 			top: 275px;
 			left: 300px;
-			background-color: #ba1919;
+			background-color: #007369;
 		}
 			.skills__hexa__js p{
 				margin-right: -10px;
@@ -1166,7 +1170,7 @@ a {
 		.skills__hexa__jq{
 			top: 145px;
 			left: 300px;
-			background-color: #ad4d10;
+			background-color: #008C72;
 		}
 		.skills__hexa__php{
 			top: 210px;
@@ -1177,10 +1181,16 @@ a {
 				padding-left: 10px;
 				
 			}
+				@media (min-width:500px) {
+			.skills__hexa__php p{
+					padding-left: 0
+				
+			}
+	}
 		.skills__hexa__wordpress{
 			top: 275px;
 			left: 500px;
-			background-color: #110b57;
+			background-color: #02A676;
 		}
 			.skills__hexa__wordpress p{
 				margin-left: -10px;
@@ -1189,11 +1199,16 @@ a {
 		.skills__hexa__ga{
 			top: 210px;
 			left: 600px;
-			background-color: #178004;
+			background-color: #02CF93;
 		}
 			.skills__hexa__ga p{
 				padding-left: 10px;
 			}
+				@media (min-width:500px) {
+			.skills__hexa__ga p{
+					padding-right: 10px
+			}
+	}
 	}
 
 .contact__head {

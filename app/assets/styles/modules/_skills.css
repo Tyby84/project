@@ -58,28 +58,30 @@
 				transform: rotateZ(-90deg);
 				color: #fff;
 				opacity: 0;
-				
-			}
+				}
 		
 		&__html{
 			top: 150px;
 			left: 100px;
-			background-color: #222;
+			background-color: #003840;
 			
 		}
 		&__css{
 			top: 210px;
 			left: 200px;
-			background-color: #eee;
+			background-color: #005A5B;
 			p{
-				color: #222;
+				
 				padding-left: 8px;
+				@mixin small{
+					padding-left: 0;
+				}
 			}
 		}
 		&__js{
 			top: 275px;
 			left: 300px;
-			background-color: #ba1919;
+			background-color: #007369;
 			p{
 				margin-right: -10px;
 				padding-bottom: 5px;
@@ -88,7 +90,7 @@
 		&__jq{
 			top: 145px;
 			left: 300px;
-			background-color: #ad4d10;
+			background-color: #008C72;
 		}
 		&__php{
 			top: 210px;
@@ -96,13 +98,16 @@
 			background-color: #0d9b6f;
 			p{
 				padding-left: 10px;
+				@mixin small{
+					padding-left: 0;
+				}
 				
 			}
 		}
 		&__wordpress{
 			top: 275px;
 			left: 500px;
-			background-color: #110b57;
+			background-color: #02A676;
 			p{
 				margin-left: -10px;
 				padding-top: 10px;
@@ -111,9 +116,12 @@
 		&__ga{
 			top: 210px;
 			left: 600px;
-			background-color: #178004;
+			background-color: #02CF93;
 			p{
 				padding-left: 10px;
+				@mixin small{
+					padding-right: 10px;
+				}
 			}
 		}
 	}
