@@ -13,15 +13,40 @@
 	
 	
 	&__instruct{
+		display: none;
+		@mixin medium{
+			display: block;
 		position: absolute;
 		top: 150px;
 		right: 150px;
 		font-size: 1.1rem;
 		font-weight: 300;
 		text-align: center;
+		}
+	}
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
 	}
 	
 	&__hexa{
+		height: 85px;
+		width: 85px;
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		background-color: #222;
+		opacity: .7;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem auto;
+		p{
+			text-align: center;
+			font-size: .9rem;
+			font-weight: 300;
+		}
+		@mixin medium{
 		position: absolute;
 		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 		transform: rotateZ(90deg);
@@ -91,6 +116,7 @@
 				padding-left: 10px;
 			}
 		}
+	}
 	}
 		
 	

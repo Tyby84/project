@@ -30,17 +30,25 @@
 		color: #eee;
 		&__main {
 			display: block;
-			animation: titleRight 2s ease-out 1s;
-			animation-fill-mode: backwards;
 			font-size: 2.6rem;
 			font-weight: 400;
 			letter-spacing: 3px;
+			animation: titleUp .5s ease-out .5s;
+			animation-fill-mode: backwards;
+			@mixin medium{
+			animation: titleRight 2s ease-out 1s;
+			animation-fill-mode: backwards;
+			}
 		}
 		&__sub {
 			display: block;
+			font-weight: 300;
+			animation: titleUp 1s ease-out 1s;
+			animation-fill-mode: backwards;
+			@mixin medium{
 			animation: titleLeft 2s ease-out 1s;
 			animation-fill-mode: backwards;
-			font-weight: 300;
+			}
 		}
 	}
 	&__desc {

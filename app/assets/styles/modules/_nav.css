@@ -46,7 +46,7 @@
 	&__footer {
 		position: absolute;
 		top: 0;
-		right: 1rem;
+		right: .5rem;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 0;

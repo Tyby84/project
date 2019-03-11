@@ -52,11 +52,11 @@
 .btn:visited {
 	position: relative;
 	display: inline-block;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 400;
-	padding: 1rem 2rem;
+	padding: .5rem 1rem;
 	border-radius: 100px;
 	transition: all .2s ease-out;
 	
@@ -79,6 +79,9 @@
 .btn-dark {
 	background-color: #222;
 	color: #fff;
+}
+.open-modal{
+	
 }
 
 .btn::after {
